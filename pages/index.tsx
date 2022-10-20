@@ -1,10 +1,6 @@
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
-  return (
-    <>
-      <p>teste</p>
-    </>
-  );
+  return <>lorem8100</>;
 };
 export default Home;
