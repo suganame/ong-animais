@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import Hamburger from "hamburger-react";
+
 export const Navbar: React.FC = () => {
   const [showNavbar, setShowNavbar] = useState(false);
 
@@ -7,24 +9,7 @@ export const Navbar: React.FC = () => {
     <div className="w-full bg-primary fixed flex-column box-border min-h-[4rem] items-center p-[0.5rem]">
       <div className="flex justify-end">
         <div className="md:hidden block flex-none self-end">
-          <button
-            className="btn btn-square btn-ghost"
-            onClick={() => setShowNavbar(!showNavbar)}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              className="inline-block w-5 h-5 stroke-current"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-          </button>
+          <Hamburger toggled={showNavbar} toggle={setShowNavbar} />
         </div>
       </div>
 
