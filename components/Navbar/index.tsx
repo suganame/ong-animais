@@ -4,7 +4,7 @@ export const Navbar: React.FC = () => {
   const [showNavbar, setShowNavbar] = useState(false);
 
   return (
-    <div className="w-full bg-base-100 flex-column box-border min-h-[4rem] items-center p-[0.5rem]">
+    <div className="w-full bg-primary fixed flex-column box-border min-h-[4rem] items-center p-[0.5rem]">
       <div className="flex justify-end">
         <div className="md:hidden block flex-none self-end">
           <button
@@ -49,41 +49,24 @@ export const Navbar: React.FC = () => {
         </ul>
       </div>
 
-      <div className="flex justify-end w-screen self-end">
+      <div className="flex justify-end w-full self-end">
         <div className="flex-none hidden md:block">
           <ul className="menu menu-horizontal p-0">
             <li>
-              <a>Inicio</a>
+              <a className="hover:text-secondary">Inicio</a>
             </li>
             <li>
-              <a>Adote</a>
+              <a className="hover:text-secondary">Adote</a>
             </li>
             <li>
-              <a>Doação</a>
+              <a className="hover:text-secondary">Doação</a>
             </li>
             <li>
-              <a>Contato</a>
+              <a className="hover:text-secondary">Contato</a>
             </li>
           </ul>
         </div>
       </div>
-
-      {/* <div className="flex">
-        <ul>
-          <li>
-            <a>Inicio</a>
-          </li>
-          <li>
-            <a>Adote</a>
-          </li>
-          <li>
-            <a>Doação</a>
-          </li>
-          <li>
-            <a>Contato</a>
-          </li>
-        </ul>
-      </div> */}
     </div>
   );
 };
