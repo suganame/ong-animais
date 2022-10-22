@@ -10,7 +10,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
     <>
       <Navbar />
       <main className="pt-[4rem] h-screen pb-[6rem]">{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

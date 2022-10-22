@@ -6,7 +6,7 @@ export const Navbar: React.FC = () => {
   const [showNavbar, setShowNavbar] = useState(false);
 
   return (
-    <div className="w-full bg-primary fixed flex-column box-border min-h-[4rem] items-center p-[0.5rem]">
+    <div className="w-full bg-primary fixed flex-column box-border min-h-[4rem] items-center p-[0.5rem] z-40">
       <div className="flex justify-end">
         <div className="md:hidden block flex-none self-end">
           <Hamburger toggled={showNavbar} toggle={setShowNavbar} />
